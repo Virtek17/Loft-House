@@ -1,0 +1,49 @@
+.cta {
+   padding: 180px 0;
+
+   background-image: url('../../img/city/city-bg2.jpg');
+
+   @include mediaTablet {
+      padding: 60px 0px;
+   }
+}
+
+
+.cta__title {
+   margin-bottom: 17px;
+}
+
+.cta__wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+
+   @include mediaTablet {
+      grid-template-columns: 1fr;
+   }
+}
+
+.cta__text {
+   line-height: 1.5;
+
+   p + p {
+      margin: 1em;
+   }
+
+   @include mediaTablet {
+      font-size: 14px;
+   }
+}
+
+.cta__form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px 35px;
+
+   @include mediaTablet {
+      grid-template-columns: 1fr;
+      & p {
+         order: 1;
+      }
+   }
+}
